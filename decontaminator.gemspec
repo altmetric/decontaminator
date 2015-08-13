@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = %q{HTML sanitizer using lightweight Oga HTML parser.}
   spec.license = 'MIT'
 
-  spec.files = `git ls-files -z`.split("\x0")
+  spec.files = %w(README.md LICENSE.txt) + Dir['lib/**/*.rb']
   spec.test_files = spec.files.grep(%r{^(spec)/})
   spec.require_paths = ['lib']
 
