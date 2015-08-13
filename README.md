@@ -22,7 +22,9 @@ Or install it yourself as:
 
 ```ruby
 require 'decontaminator'
-Decontaminator.fragment('your html goes here')
+output = Decontaminator.fragment('<h1>Heading</h1><p>Lorem ipsum...</p><script>alert(1)</script>')
+puts output.inspect
+" Heading  Lorem ipsum... "
 ```
 
 ## Contributing
