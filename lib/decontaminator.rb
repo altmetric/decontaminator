@@ -1,0 +1,2 @@
+class Decontaminator
+end
