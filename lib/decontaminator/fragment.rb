@@ -1,3 +1,5 @@
+require 'oga'
+
 module Decontaminator
   class Fragment
     def initialize(html_fragment)
@@ -50,7 +52,7 @@ module Decontaminator
 
     def sanitize(node_set, blacklisted_tags)
       node_set
-        .reject { |node| text?(node) ? false : blacklisted_tags.include?(node.name) }
+        .reject { |node| !text?(node) && blacklisted_tags.include?(node.name) }
         .flat_map { |node| [whitespace(node, :prefix), text(node, blacklisted_tags), whitespace(node, :suffix)] }
         .join
     end
@@ -60,9 +62,7 @@ module Decontaminator
     end
 
     def whitespace(node, _position)
-      if text?(node)
-        ''
-      elsif WHITESPACE_CONTENT_TAGS.include?(node.name)
+      if !text?(node) && WHITESPACE_CONTENT_TAGS.include?(node.name)
         ' '
       else
         ''

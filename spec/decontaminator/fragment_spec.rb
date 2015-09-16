@@ -1,6 +1,5 @@
 require 'rspec'
-
-require_relative '../../lib/decontaminator'
+require 'decontaminator'
 
 RSpec.describe Decontaminator::Fragment do
   describe '.decontaminate' do
