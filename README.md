@@ -2,6 +2,9 @@
 
 Ruby HTML sanitizer based on a lightweight Oga parser.
 
+**Current version:** 0.0.0
+**Supported Ruby versions:** 1.9.3, 2.0, 2.1, 2.2, JRuby 1.7, and Rubinius 2.5
+
 ## Installation
 
 Add this line to your application's Gemfile:
