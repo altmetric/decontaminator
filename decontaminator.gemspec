@@ -15,5 +15,5 @@ Gem::Specification.new do |spec|
   spec.test_files = spec.files.grep(%r{^(spec)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'oga', '~> 1.2.0'
+  spec.add_dependency 'oga', '~> 1.3'
 end
