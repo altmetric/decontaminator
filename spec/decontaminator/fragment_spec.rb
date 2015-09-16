@@ -1,7 +1,7 @@
 require 'decontaminator'
 
 RSpec.describe Decontaminator::Fragment do
-  describe '.decontaminate' do
+  describe '#decontaminate' do
     it 'sanitizes an empty string' do
       expect(described_class.new('').decontaminate).to eq('')
     end
