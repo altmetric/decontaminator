@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name = 'decontaminator'
   spec.version = Decontaminator::VERSION
   spec.authors = ['Matthew MacLeod', 'Paul Mucur', 'Jakub Pawlowicz']
-  spec.email = %w(jakub@altmetric.com matt@matt-m.co.uk)
+  spec.email = %w(matt@matt-m.co.uk mudge@mudge.name jakub@altmetric.com)
   spec.summary = %q{HTML sanitizer using lightweight Oga HTML parser.}
   spec.license = 'MIT'
 
