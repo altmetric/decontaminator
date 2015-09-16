@@ -42,4 +42,6 @@ puts fragment.decontaminate.inspect
 
 ## License
 
-This project is released under the [MIT license](https://github.com/altmetric/decontaminator/blob/master/LICENSE.txt).
+Copyright © 2015 Altmetric LLP
+
+Distributed under the [MIT license](https://github.com/altmetric/decontaminator/blob/master/LICENSE.txt).
