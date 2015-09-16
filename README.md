@@ -22,8 +22,10 @@ Or install it yourself as:
 
 ```ruby
 require 'decontaminator'
-output = Decontaminator.fragment('<h1>Heading</h1><p>Lorem ipsum...</p><script>alert(1)</script>')
-puts output.inspect
+
+input = '<h1>Heading</h1><p>Lorem ipsum...</p><script>alert(1)</script>'
+fragment = Decontaminator::Fragment.new(input)
+puts fragment.decontaminate.inspect
 " Heading  Lorem ipsum... "
 ```
 
