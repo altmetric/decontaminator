@@ -1,4 +1,4 @@
-require_relative 'lib/decontaminator/version'
+require File.expand_path('../lib/decontaminator/version', __FILE__)
 
 Gem::Specification.new do |spec|
   spec.name = 'decontaminator'
