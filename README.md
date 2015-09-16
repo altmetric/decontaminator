@@ -1,4 +1,4 @@
-# Decontaminator
+# Decontaminator [![Build Status](https://travis-ci.org/altmetric/decontaminator.svg?branch=master)](https://travis-ci.org/altmetric/decontaminator)
 
 Ruby HTML sanitizer based on a lightweight Oga parser.
 
