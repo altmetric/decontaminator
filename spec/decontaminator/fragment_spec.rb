@@ -1,4 +1,3 @@
-require 'rspec'
 require 'decontaminator'
 
 RSpec.describe Decontaminator::Fragment do
