@@ -52,13 +52,17 @@ module Decontaminator
 
     def sanitize(node_set, blacklisted_tags)
       node_set
-        .reject { |node| !text?(node) && blacklisted_tags.include?(node.name) }
+        .reject { |node| comment?(node) || (!text?(node) && blacklisted_tags.include?(node.name)) }
         .flat_map { |node| [whitespace(node, :prefix), text(node, blacklisted_tags), whitespace(node, :suffix)] }
         .join
     end
 
     def text?(node)
       node.is_a?(Oga::XML::Text)
+    end
+
+    def comment?(node)
+      node.is_a?(Oga::XML::Comment)
     end
 
     def whitespace(node, _position)
