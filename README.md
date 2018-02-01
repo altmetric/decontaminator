@@ -2,7 +2,7 @@
 
 Ruby HTML sanitizer based on a lightweight Oga parser.
 
-**Current version:** 1.0.0
+**Current version:** 1.0.1
 
 **Supported Ruby versions:** 1.9.3, 2.0, 2.1, 2.2, JRuby 1.7, and Rubinius 2.5
 
@@ -43,6 +43,6 @@ puts fragment.decontaminate.inspect
 
 ## License
 
-Copyright © 2015 Altmetric LLP
+Copyright © 2015-2018 Altmetric LLP
 
 Distributed under the [MIT license](https://github.com/altmetric/decontaminator/blob/master/LICENSE.txt).
