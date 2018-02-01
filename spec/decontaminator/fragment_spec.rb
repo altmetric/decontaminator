@@ -45,5 +45,9 @@ RSpec.describe Decontaminator::Fragment do
     it 'sanitizes content with blacklisted tags' do
       expect(described_class.new('<figcaption>Blacklist this</figcaption><p>but not that</p>').decontaminate(blacklist: %w(figcaption))).to eq(' but not that ')
     end
+
+    it 'sanitizes content with comments' do
+      expect(described_class.new('<div>Hello there<!-- This is a comment --></div>').decontaminate).to eq(' Hello there ')
+    end
   end
 end
