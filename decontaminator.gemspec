@@ -13,5 +13,5 @@ Gem::Specification.new do |spec|
   spec.files = %w(README.md LICENSE.txt) + Dir['lib/**/*.rb']
   spec.test_files = Dir['spec/**/*.rb']
 
-  spec.add_dependency('oga', '~> 1.3')
+  spec.add_dependency('oga', '>= 1.3', '< 3.0')
 end
