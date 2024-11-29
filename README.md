@@ -1,10 +1,10 @@
-# Decontaminator [![Build Status](https://travis-ci.org/altmetric/decontaminator.svg?branch=master)](https://travis-ci.org/altmetric/decontaminator)
+# Decontaminator
 
 Ruby HTML sanitizer based on a lightweight Oga parser.
 
 **Current version:** 1.0.2
 
-**Supported Ruby versions:** 1.9.3, 2.0, 2.1, 2.2, JRuby 1.7, and Rubinius 2.5
+**Supported Ruby versions:** >= 2.7
 
 ## Installation
 
@@ -43,6 +43,6 @@ puts fragment.decontaminate.inspect
 
 ## License
 
-Copyright © 2015-2018 Altmetric LLP
+Copyright © 2015-2024 Altmetric LLP
 
 Distributed under the [MIT license](https://github.com/altmetric/decontaminator/blob/master/LICENSE.txt).
