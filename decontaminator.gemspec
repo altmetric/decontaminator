@@ -14,4 +14,7 @@ Gem::Specification.new do |spec|
   spec.test_files = Dir['spec/**/*.rb']
 
   spec.add_dependency('oga', '>= 1.3', '< 3.0')
+
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec'
 end
